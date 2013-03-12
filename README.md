@@ -31,7 +31,7 @@ $ easy_install lxml
 
 run the script using:
 ```shell
-$ python schedule.py
+$ python retrieve_schedule.py
 ```
 
 Or import module *Schedule* in your project and create the instance:

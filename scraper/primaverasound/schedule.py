@@ -82,16 +82,3 @@ def text(element):
 # Trim whitespace and encode before uploading.
 def clean(string):
     return string.strip().encode('utf-8')
-
-def main():
-    '''Main method to initialize project.
-    '''
-
-    primaveraSoundSchedule = Schedule()
-
-    import pprint
-    pprint.pprint(primaveraSoundSchedule.horarios)
-
-if __name__ == '__main__':
-    main()     
-
