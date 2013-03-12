@@ -1,8 +1,8 @@
 # Primavera Sound 2013 Horarios
-
+![Primavera Sound 2013](http://primaverasound.com/ps/images/320x310_psbcn.jpg)
 ## Introduction
 
-Retrieve Primavera Sound 2013 schedule from []Programación](http://www.primaverasound.es/programacion)
+Retrieve Primavera Sound 2013 schedule from [Programación](http://www.primaverasound.es/programacion)
 
 ## Environment
 
@@ -22,7 +22,7 @@ Libraries required:
     * requests
     * lxml
     
-Install using python dependency management **easy_install**[http://peak.telecommunity.com/DevCenter/EasyInstall].
+Install using python dependency management [easy_install](http://peak.telecommunity.com/DevCenter/EasyInstall).
 ```shell
 $ easy_install requests
 $ easy_install lxml
