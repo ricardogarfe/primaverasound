@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Primaverasound by ricardogarfe</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Primaverasound</h1>
+        <h2>Primavera Sound 2013 Schedule scraper per day and Concert.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/ricardogarfe/primaverasound/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/ricardogarfe/primaverasound/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/ricardogarfe/primaverasound" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>Primavera Sound 2013 Horarios</h1>
+
+<p><img src="http://upload.wikimedia.org/wikipedia/en/7/7b/Primavera_Sound_10.jpg" alt="Primavera Sound 2013"></p>
+
+<h2>Introduction</h2>
+
+<p>Retrieve Primavera Sound 2013 schedule from <a href="http://www.primaverasound.es/programacion">Programación</a></p>
+
+<h2>Environment</h2>
+
+<p>Python 2.7.2</p>
+
+<h2>License</h2>
+
+<p>This project has <code>Apache License, Version 2.0</code> see complete 
+definition in <strong>LICENSE</strong> file.</p>
+
+<h2>Install</h2>
+
+<h3>Developer requirements</h3>
+
+<p>Libraries required:</p>
+
+<pre><code>* requests
+* lxml
+</code></pre>
+
+<p>Install using python dependency management <a href="http://peak.telecommunity.com/DevCenter/EasyInstall">easy_install</a>.</p>
+
+<pre lang="shell"><code>$ easy_install requests
+$ easy_install lxml
+</code></pre>
+
+<h2>Command</h2>
+
+<p>run the script using:</p>
+
+<pre lang="shell"><code>$ python schedule.py
+</code></pre>
+
+<p>Or import module <em>Schedule</em> in your project and create the instance:</p>
+
+<div class="highlight"><pre><span class="n">primaveraSoundSchedule</span> <span class="o">=</span> <span class="n">Schedule</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">pprint</span>
+<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">primaveraSoundSchedule</span><span class="o">.</span><span class="n">horarios</span><span class="p">)</span>
+</pre></div>
+
+<p>Retrieve schedule results in dictionary list per day (there is no hour set yet for concerts):</p>
+
+<div class="highlight"><pre><span class="p">[{</span><span class="err">'horario':</span> <span class="err">['Lunes</span> <span class="err">20</span> <span class="err">de</span> <span class="err">mayo',</span>
+              <span class="err">[{'Artista':</span> <span class="err">'Jupiter</span> <span class="err">Lion',</span>
+                <span class="err">'Escenario':</span> <span class="err">'Sala</span> <span class="err">Apolo',</span>
+                <span class="err">'Hora':</span> <span class="err">''</span><span class="p">},</span>
+               <span class="p">{</span><span class="err">'Artista':</span> <span class="err">'Spectrum',</span>
+                <span class="err">'Escenario':</span> <span class="err">'Sala</span> <span class="err">Apolo',</span>
+                <span class="err">'Hora':</span> <span class="err">''</span><span class="p">}]</span><span class="err">]},</span>
+</pre></div>
+
+<h2>Feel Free</h2>
+
+<p>Feel Free to do anything with this script ! I know it could be better :) and I'll improve it.</p>
+
+<h2>Scraping Wiki</h2>
+
+<p>You can run this script in Scraping Wiki:</p>
+
+<ul>
+<li><a href="https://scraperwiki.com/scrapers/primavera_sound_2013/">https://scraperwiki.com/scrapers/primavera_sound_2013/</a></li>
+</ul><h2>License</h2>
+
+<p><a href="http://creativecommons.org/licenses/by/3.0/" rel="Creative Commons Attribution 3.0"><img src="http://i.creativecommons.org/l/by/3.0/88x31.png" alt="Foo"></a></p>
+
+<p>This work by Ricardo Gracía Fernández - ricardogarfe [at] gmail [dot] com is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
