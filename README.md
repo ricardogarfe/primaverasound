@@ -10,8 +10,7 @@ Python 2.7.2
 
 ## License
 
-This project has ``Apache License, Version 2.0`` see complete 
-definition in **LICENSE** file.
+This project has ``Apache License, Version 2.0`` see complete definition in [LICENSE](https://raw.github.com/ricardogarfe/primaverasound/master/LICENSE) file.
 
 ## Install
 
