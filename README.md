@@ -1,8 +1,8 @@
 # Primavera Sound 2013 Horarios
-
+![Primavera Sound 2013](http://upload.wikimedia.org/wikipedia/en/7/7b/Primavera_Sound_10.jpg)
 ## Introduction
 
-Retrieve Primavera Sound 2013 schedule from []Programación](http://www.primaverasound.es/programacion)
+Retrieve Primavera Sound 2013 schedule from [Programación](http://www.primaverasound.es/programacion)
 
 ## Environment
 
