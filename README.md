@@ -22,7 +22,7 @@ Libraries required:
     * requests
     * lxml
     
-Install using python dependency management **easy_install**[http://peak.telecommunity.com/DevCenter/EasyInstall].
+Install using python dependency management [easy_install](http://peak.telecommunity.com/DevCenter/EasyInstall).
 ```shell
 $ easy_install requests
 $ easy_install lxml
