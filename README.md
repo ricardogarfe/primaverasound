@@ -35,10 +35,14 @@ $ python retrieve_schedule.py
 
 Or import module *Schedule* in your project and create the instance:
 ```python
+from scraper.primaverasound.schedule import Schedule
+import json
+
 primaveraSoundSchedule = Schedule()
 
-import pprint
-pprint.pprint(primaveraSoundSchedule.horarios)
+# Print results.
+schedule_result = json.dumps(primaveraSoundSchedule.horarios, sort_keys=True, indent=4)
+print schedule_result
 ```
 
 Retrieve schedule results in dictionary list per day (there is no hour set yet for concerts):
