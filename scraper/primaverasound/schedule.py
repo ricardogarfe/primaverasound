@@ -32,6 +32,10 @@ class Schedule(object):
         # Conciertos
         dds = config_tree.xpath('//*[@id="page-wrap"]/div[4]/div[2]/dl/dd')
         
+        self.dia = 20
+        self.anyo = 2013
+        self.mes = 05
+
         self.horarios = []
         self.parse_horarios(dls, dds)
 
@@ -47,6 +51,8 @@ class Schedule(object):
         dia = dl.find('a')
         dia = clean(text(dia))
 
+        fecha = self.fecha_concierto()
+        self.dia += 1
         ''' dd child table
         /div/table
         '''
@@ -71,10 +77,19 @@ class Schedule(object):
             artist_hora = artist_data.find('td[3]')
             concierto[columns_header[2].text] = clean(text(artist_hora))
 
+            # artista_id
+            concierto_id = str(artist_content.attrib['href']).rsplit('=')[1:][0]
+            concierto['id'] = concierto_id
+
+            # dia
+            concierto['dia'] = fecha
             conciertos.append(concierto)
 
         self.horarios.append({'horario' : [dia, conciertos]})
 
+    def fecha_concierto(self):
+        return str(self.anyo) + "-" + str(self.mes) + "-" + str(self.dia)
+        
 # Return element as text.
 def text(element):
     return lxml.html.tostring(element, method='text', encoding=unicode)
@@ -82,3 +97,5 @@ def text(element):
 # Trim whitespace and encode before uploading.
 def clean(string):
     return string.strip().encode('utf-8')
+
+
