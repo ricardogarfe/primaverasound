@@ -69,51 +69,40 @@ $ easy_install lxml
 
 <p>Or import module <em>Schedule</em> in your project and create the instance:</p>
 
-<div class="highlight"><pre><span class="n">primaveraSoundSchedule</span> <span class="o">=</span> <span class="n">Schedule</span><span class="p">()</span>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">scraper.primaverasound.schedule</span> <span class="kn">import</span> <span class="n">Schedule</span>
+<span class="kn">import</span> <span class="nn">json</span>
 
-<span class="kn">import</span> <span class="nn">pprint</span>
-<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">primaveraSoundSchedule</span><span class="o">.</span><span class="n">horarios</span><span class="p">)</span>
+<span class="n">primaveraSoundSchedule</span> <span class="o">=</span> <span class="n">Schedule</span><span class="p">()</span>
+
+<span class="c"># Print results.</span>
+<span class="n">schedule_result</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">primaveraSoundSchedule</span><span class="o">.</span><span class="n">horarios</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">schedule_result</span>
 </pre></div>
 
 <p>Retrieve schedule results in dictionary list per day (there is no hour set yet for concerts):</p>
 
 <div class="highlight"><pre><span class="p">[</span>
     <span class="p">{</span>
-        <span class="err">'horario':</span> 
-            <span class="err">['S\xc3\x83\xc2\xa1bado</span> <span class="err">25</span> <span class="err">de</span> <span class="err">mayo',</span>
-                   <span class="err">[</span>
-                       <span class="err">{</span>
-                        <span class="err">'Artista':</span> <span class="err">'Mount</span> <span class="err">Eerie',</span>
-                        <span class="err">'Escenario':</span> <span class="err">'Parc</span> <span class="err">del</span> <span class="err">F\xc3\xb2rum',</span>
-                        <span class="err">'Hora':</span> <span class="err">'',</span>
-                        <span class="err">'dia':</span> <span class="err">'2013-5-25',</span>
-                        <span class="err">'id':</span> <span class="err">'114'</span>
-                       <span class="p">},</span>
-                       <span class="p">{</span>
-                        <span class="err">'Artista':</span> <span class="err">'My</span> <span class="err">Bloody</span> <span class="err">Valentine',</span>
-                        <span class="err">'Escenario':</span> <span class="err">'Parc</span> <span class="err">del</span> <span class="err">F\xc3\xb2rum',</span>
-                        <span class="err">'Hora':</span> <span class="err">'',</span>
-                        <span class="err">'dia':</span> <span class="err">'2013-5-25',</span>
-                        <span class="err">'id':</span> <span class="err">'116'</span>
-                       <span class="p">},</span>
-                       <span class="p">{</span>
-                        <span class="err">'Artista':</span> <span class="err">'Nick</span> <span class="err">Cave</span> <span class="err">&amp;</span> <span class="err">The</span> <span class="err">Bad</span> <span class="err">Seeds',</span>
-                        <span class="err">'Escenario':</span> <span class="err">'Parc</span> <span class="err">del</span> <span class="err">F\xc3\xb2rum',</span>
-                        <span class="err">'Hora':</span> <span class="err">'',</span>
-                        <span class="err">'dia':</span> <span class="err">'2013-5-25',</span>
-                        <span class="err">'id':</span> <span class="err">'121'</span>
-                       <span class="p">},</span>
-                       <span class="p">{</span>
-                        <span class="err">'Artista':</span> <span class="err">'Nils</span> <span class="err">Frahm',</span>
-                        <span class="err">'Escenario':</span> <span class="err">'Parc</span> <span class="err">del</span> <span class="err">F\xc3\xb2rum',</span>
-                        <span class="err">'Hora':</span> <span class="err">'',</span>
-                        <span class="err">'dia':</span> <span class="err">'2013-5-25',</span>
-                        <span class="err">'id':</span> <span class="err">'124'</span>
-                       <span class="p">}</span>
-                   <span class="p">]</span>
-            <span class="err">]</span>
-    <span class="err">}</span>
-<span class="err">]</span>
+        <span class="nt">"horario"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"Lunes 20 de mayo"</span><span class="p">,</span> 
+            <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">"Artista"</span><span class="p">:</span> <span class="s2">"Jupiter Lion"</span><span class="p">,</span> 
+                    <span class="nt">"Escenario"</span><span class="p">:</span> <span class="s2">"Sala Apolo"</span><span class="p">,</span> 
+                    <span class="nt">"Hora"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span> 
+                    <span class="nt">"dia"</span><span class="p">:</span> <span class="s2">"2013-5-20"</span><span class="p">,</span> 
+                    <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"143"</span>
+                <span class="p">},</span> 
+                <span class="p">{</span>
+                    <span class="nt">"Artista"</span><span class="p">:</span> <span class="s2">"Spectrum"</span><span class="p">,</span> 
+                    <span class="nt">"Escenario"</span><span class="p">:</span> <span class="s2">"Sala Apolo"</span><span class="p">,</span> 
+                    <span class="nt">"Hora"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span> 
+                    <span class="nt">"dia"</span><span class="p">:</span> <span class="s2">"2013-5-20"</span><span class="p">,</span> 
+                    <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"142"</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">]</span>
+    <span class="p">},</span> 
 </pre></div>
 
 <h2>Feel Free</h2>
