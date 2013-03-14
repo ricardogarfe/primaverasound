@@ -45,41 +45,26 @@ Retrieve schedule results in dictionary list per day (there is no hour set yet f
 ```json
 [
     {
-        'horario': 
-            ['S\xc3\x83\xc2\xa1bado 25 de mayo',
-                   [
-                       {
-                        'Artista': 'Mount Eerie',
-                        'Escenario': 'Parc del F\xc3\xb2rum',
-                        'Hora': '',
-                        'dia': '2013-5-25',
-                        'id': '114'
-                       },
-                       {
-                        'Artista': 'My Bloody Valentine',
-                        'Escenario': 'Parc del F\xc3\xb2rum',
-                        'Hora': '',
-                        'dia': '2013-5-25',
-                        'id': '116'
-                       },
-                       {
-                        'Artista': 'Nick Cave & The Bad Seeds',
-                        'Escenario': 'Parc del F\xc3\xb2rum',
-                        'Hora': '',
-                        'dia': '2013-5-25',
-                        'id': '121'
-                       },
-                       {
-                        'Artista': 'Nils Frahm',
-                        'Escenario': 'Parc del F\xc3\xb2rum',
-                        'Hora': '',
-                        'dia': '2013-5-25',
-                        'id': '124'
-                       }
-                   ]
+        "horario": [
+            "Lunes 20 de mayo", 
+            [
+                {
+                    "Artista": "Jupiter Lion", 
+                    "Escenario": "Sala Apolo", 
+                    "Hora": "", 
+                    "dia": "2013-5-20", 
+                    "id": "143"
+                }, 
+                {
+                    "Artista": "Spectrum", 
+                    "Escenario": "Sala Apolo", 
+                    "Hora": "", 
+                    "dia": "2013-5-20", 
+                    "id": "142"
+                }
             ]
-    }
-]
+        ]
+    }, 
 ```
 
 ## Feel Free

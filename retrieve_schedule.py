@@ -15,15 +15,15 @@
 
 '''
 from scraper.primaverasound.schedule import Schedule
-import pprint
-
+import json
 
 def main():
     '''Main method to initialize project.
     '''
     primaveraSoundSchedule = Schedule()
     # Print results.
-    pprint.pprint(primaveraSoundSchedule.horarios)
+    schedule_result = json.dumps(primaveraSoundSchedule.horarios, sort_keys=True, indent=4)
+    print schedule_result
 
 if __name__ == '__main__':
     main()     
