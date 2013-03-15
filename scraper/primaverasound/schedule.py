@@ -1,5 +1,5 @@
 # coding=UTF-8
-'''Copyright [2012] [Ricardo García Fernández]
+'''Copyright [2012] [Ricardo García Fernández] [ricarodgarfe@gmail.com]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -17,7 +17,6 @@
 
 import requests
 import lxml.html
-from lxml import etree
 
 class Schedule(object):
     def __init__(self):
@@ -25,7 +24,6 @@ class Schedule(object):
         api_url = 'http://www.primaverasound.es/programacion'
         config_req = requests.get(api_url)
         config_tree = lxml.html.fromstring(config_req.content)
-        remove_blank_text = True
 
         # Dias
         dls = config_tree.xpath('//*[@id="page-wrap"]/div[4]/div[2]/dl/dt')        
