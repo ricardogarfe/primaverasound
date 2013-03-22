@@ -36,7 +36,7 @@ Using `easy_install` command you can install every application published in pypi
 To install this project you have to use the command:
 
 ```shell
-easy_install retrieve_schedule
+easy_install primaverasound_2013
 ```
 
 Now you can use `retrieve_schedule.py` script in your computer as a new command.
