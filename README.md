@@ -14,6 +14,11 @@ This project has ``Apache License, Version 2.0`` see complete definition in [LIC
 
 ## Install
 
+Read install instructions in [INSTALL](https://github.com/ricardogarfe/primaverasound/blob/master/INSTALL.md) file to use as a command in your system.
+
+* Install from PYPI.
+* Install from Source.
+
 ### Developer requirements
 
 Libraries required:
