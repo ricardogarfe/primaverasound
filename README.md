@@ -14,10 +14,21 @@ This project has ``Apache License, Version 2.0`` see complete definition in [LIC
 
 ## Install
 
-Read install instructions in [INSTALL](https://github.com/ricardogarfe/primaverasound/blob/master/INSTALL.md) file to use as a command in your system.
+### Install from PYPI
 
-* Install from PYPI.
-* Install from Source.
+Using `easy_install` command you can install every application published in pypi.
+
+To install this project you have to use the command:
+
+```shell
+easy_install primaverasound_2013
+```
+
+Now you can use `retrieve_schedule.py` script in your computer as a new command.
+
+### Install from Source
+
+Read install instructions in [INSTALL](https://github.com/ricardogarfe/primaverasound/blob/master/INSTALL.md) file to use as a command in your system from source.
 
 ### Developer requirements
 
