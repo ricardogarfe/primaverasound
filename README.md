@@ -30,7 +30,7 @@ Now you can use `retrieve_schedule.py` script in your computer as a new command.
 
 Read install instructions in [INSTALL](https://github.com/ricardogarfe/primaverasound/blob/master/INSTALL.md) file to use as a command in your system from source.
 
-### Developer requirements
+## Developer requirements
 
 Libraries required:
 
