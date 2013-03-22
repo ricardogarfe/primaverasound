@@ -17,13 +17,31 @@
 from scraper.primaverasound.schedule import Schedule
 import json
 
+class RetrieveSchedule:
+    '''RetrieveSchedule class to retrieve Primavera Sound 2013 Schedule.
+
+    Created on 22/03/2013
+
+    @author: Ricardo García Fernández
+    @mail: ricardogarfe@gmail.com
+    
+    '''
+    
+    def __init__(self):
+        '''Init method
+        '''
+
+        primaveraSoundSchedule = Schedule()
+
+        # Print results.
+        schedule_result = json.dumps(primaveraSoundSchedule.horarios, sort_keys=True, indent=4)
+        print schedule_result
+
 def main():
     '''Main method to initialize project.
     '''
-    primaveraSoundSchedule = Schedule()
-    # Print results.
-    schedule_result = json.dumps(primaveraSoundSchedule.horarios, sort_keys=True, indent=4)
-    print schedule_result
+
+    RetrieveSchedule()
 
 if __name__ == '__main__':
     main()     
