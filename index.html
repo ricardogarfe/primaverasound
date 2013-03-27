@@ -38,7 +38,7 @@
 
 <h2>Environment</h2>
 
-<p>Python 2.7.2</p>
+<p>Install <code>Python 2.7.2</code>.</p>
 
 <h2>License</h2>
 
@@ -48,11 +48,25 @@
 
 <h3>Install from PYPI</h3>
 
-<p>Using <code>easy_install</code> command you can install every application published in pypi.</p>
+<p>Using <code>easy_install</code> command you can install every application published in pypi. Debian based:</p>
+
+<pre lang="shell"><code>$ sudo apt-get install python-setuptools
+</code></pre>
 
 <p>To install this project you have to use the command:</p>
 
-<pre lang="shell"><code>easy_install primaverasound_2013
+<pre lang="shell"><code>$ easy_install primaverasound_2013
+</code></pre>
+
+<p>Using <code>get-pip</code>:</p>
+
+<pre lang="shell"><code>$ curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+$ [sudo] python get-pip.py
+</code></pre>
+
+<p>Install project with pip:</p>
+
+<pre lang="shell"><code>$ sudo pip install primaverasound_2013
 </code></pre>
 
 <p>Now you can use <code>retrieve_schedule.py</code> script in your computer as a new command.</p>
