@@ -11,10 +11,10 @@ Setuptools setup file
 from setuptools import setup, find_packages
 
 setup (name="primaverasound_2013",
-        version="00.00.91",
+        version="00.00.92",
         packages=find_packages(exclude=["test", "test.*"]),
         scripts=['retrieve_schedule.py'],
-        install_requires=['requests', 'lxml'],
+        install_requires=['requests', 'lxml==2.3.2'],
         package_data={'primaverasound_schedule':[''], },
         author='Ricardo García Fernández',
         author_email='ricardogarfe@gmail.com',
