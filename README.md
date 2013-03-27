@@ -6,7 +6,7 @@ Retrieve Primavera Sound 2013 schedule from [Programación](http://www.primavera
 
 ## Environment
 
-Python 2.7.2
+Install `Python 2.7.2`.
 
 ## License
 
@@ -16,8 +16,11 @@ This project has ``Apache License, Version 2.0`` see complete definition in [LIC
 
 ### Install from PYPI
 
-Using `easy_install` command you can install every application published in pypi.
+Using `easy_install` command you can install every application published in pypi. Debian based:
 
+```shell
+sudo apt-get install python-setuptools
+```
 To install this project you have to use the command:
 
 ```shell
