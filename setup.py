@@ -1,6 +1,6 @@
 # coding=UTF-8
 '''
-Created on 22/03/2013
+Created on 26/04/2013
 
 Setuptools setup file
 
@@ -11,7 +11,7 @@ Setuptools setup file
 from setuptools import setup, find_packages
 
 setup (name="primaverasound_2013",
-        version="00.00.92",
+        version="00.00.94",
         packages=find_packages(exclude=["test", "test.*"]),
         scripts=['retrieve_schedule.py'],
         install_requires=['requests', 'lxml==2.3.2'],
