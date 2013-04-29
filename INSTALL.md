@@ -21,12 +21,13 @@ Install python application using **setupTools** configuration and publish to the
   * Register in http://pypi.python.org.
   * Create a `.pypirc` file with user and password from pypi.
   * Introduce next commands in application base directory:
-    ```shell
-    sudo python setup.py install
-    sudo python setup.py register
-    sudo python setup.py sdist upload
-    sudo python setup.py bdist upload
-    ```
+
+```shell
+sudo python setup.py install
+sudo python setup.py register
+sudo python setup.py sdist upload
+sudo python setup.py bdist upload
+```
   * Go to yout profile in pypi and you can see you package.
 
 ## EasyInstall
