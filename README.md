@@ -14,6 +14,41 @@ This project has ``Apache License, Version 2.0`` see complete definition in [LIC
 
 ## Install
 
+Install easy_install python tool:
+
+```shell
+$ sudo apt-get install python-setuptools
+```
+
+## Developer requirements
+
+Libraries required:
+
+    * requests
+    * lxml
+    
+Install using python dependency management [easy_install](http://peak.telecommunity.com/DevCenter/EasyInstall).
+```shell
+$ sudo easy_install requests
+$ sudo easy_install lxml
+```
+
+### Install from Source
+
+Clone the repository:
+
+```shell
+$ git clone git://github.com/ricardogarfe/primaverasound.git
+```
+
+Goto `primaverasound` dir and install script:
+
+```shell
+sudo python setup.py install
+```
+
+Read install instructions in [INSTALL](https://github.com/ricardogarfe/primaverasound/blob/master/INSTALL.md) file to use as a command in your system from source.
+
 ### Install from PYPI
 
 Using `easy_install` command you can install every application published in pypi. Debian based:
@@ -40,22 +75,6 @@ $ sudo pip install primaverasound_2013
 
 Now you can use `retrieve_schedule.py` script in your computer as a new command.
 
-### Install from Source
-
-Read install instructions in [INSTALL](https://github.com/ricardogarfe/primaverasound/blob/master/INSTALL.md) file to use as a command in your system from source.
-
-## Developer requirements
-
-Libraries required:
-
-    * requests
-    * lxml
-    
-Install using python dependency management [easy_install](http://peak.telecommunity.com/DevCenter/EasyInstall).
-```shell
-$ easy_install requests
-$ easy_install lxml
-```
 ## Command
 
 run the script using:
